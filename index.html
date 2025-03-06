@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ada Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -12,20 +18,18 @@
       <h1>Ada Task</h1>
     </header>
     <main class="main">
-
       <form action="" class="form-add">
-        <input type="text" placeholder="Nueva tarea" />
-        <input type="submit" value="Agregar" />
+        <input type="text" placeholder="Nueva tarea" class="inputNewTask" />
+        <input type="submit" value="Agregar" class="submitTask" />
       </form>
 
       <div class="form-search">
-        <form action="">
-          <input type="text" placeholder="Ejemplo: Llorar" />
-          <input type="submit" value="Buscar" />
+        <form action="" class="form-filter">
+          <input type="text" placeholder="Ejemplo: Llorar" class="inputSearchTask" />
+          <input type="submit" value="Buscar" class="submitSearch" />
         </form>
-        <ul></ul>
+        <ul class="js-task-list"></ul>
       </div>
-
     </main>
 
     <script src="./js/main.js"></script>

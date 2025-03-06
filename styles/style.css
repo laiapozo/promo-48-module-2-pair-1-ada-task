@@ -1,5 +1,5 @@
 .header {
-    background-color: #099d8d;
+    background-color: #9653de;
     color: white;
     padding: 20px;
     text-align: center;
@@ -18,9 +18,55 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    border-radius: 2px;
+}
+
+.inputNewTask {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+}
+
+.submitTask {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    background-color: #b186df;
+    border: none;
 }
 
 .form-search {
     border: 2px solid lightgray;
     padding: 10px;
+    border-radius: 2px;
+}
+
+.form-filter {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.inputSearchTask {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    width: 100%;
+}
+
+.submitSearch {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    background-color: #b186df;
+    border: none;
+}
+
+/* Clase para añadir a un elemento completado */
+.completed {
+    text-decoration: line-through;
 }
