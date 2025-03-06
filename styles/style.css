@@ -1,0 +1,26 @@
+.header {
+    background-color: #099d8d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    min-height: 300px;
+}
+
+.form-add {
+    border: 2px solid lightgray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-search {
+    border: 2px solid lightgray;
+    padding: 10px;
+}
