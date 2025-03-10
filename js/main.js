@@ -10,7 +10,7 @@ fetch(SERVER_URL)
   .then((response) => response.json())
   .then((data) => {
     tasks = data.results;
-
+    taskList.innerHTML = "";
     renderTasks(tasks);
   });
 
