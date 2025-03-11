@@ -29,9 +29,9 @@ const handleClick = (event) => {
   if (!taskID) return;
   const chosenTask = tasks.find((task) => task.id === taskID);
   if (chosenTask.completed === true) {
-    chosenTask.completed === false;
+    chosenTask.completed = false;
   } else {
-    chosenTask.completed === true;
+    chosenTask.completed = true;
   }
   taskList.innerHTML = "";
   renderTasks(tasks);
