@@ -96,3 +96,19 @@ if (tasksLocalStorage !== null) {
       console.error(error);
     });
 }
+
+// const textInput = document.querySelector(".js-search-text");
+// const searchBtn = document.querySelector(".js-search-btn");
+
+// function filterTask(ev){
+// ev.preventDefault();
+// const searchText = textInput.value;
+
+// for (const task of tasks){
+//   if (task.name.includes(searchText)){
+//     taskList.innerHTML += renderTasks(task)
+//   }
+// }
+// }
+
+// searchBtn.addEventListener("click",filterTask);
