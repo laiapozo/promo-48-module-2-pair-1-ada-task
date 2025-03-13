@@ -10,10 +10,9 @@ const SERVER_URL = `https://dev.adalab.es/api/todo/${GITHUB_USER}`;
 const handleClick = (event) => {
   const taskID = parseInt(event.target.id);
   if (!taskID) return;
-  console.log(tasks)
+ 
   const chosenTask = tasks.find((task) => {
-    console.log(task.id)
-    console.log(taskID) 
+ 
     return task.id === taskID
   } ); 
   if (chosenTask.completed === true) {
@@ -69,10 +68,10 @@ const handleNewTask = (event) => {
   };
 
   tasks.push(newTask);
-  console.log(tasks)
+ 
   taskList.innerHTML += `<li><input id="${newTask.id}" type="checkbox" >${newTask.name}</li>`;
   localStorage.setItem("tasks", JSON.stringify(tasks));
-  //tasksLocalStorage.push(task);
+
 };
 
 buttonAdd.addEventListener("click", handleNewTask);
@@ -82,9 +81,8 @@ const tasksLocalStorage = JSON.parse(localStorage.getItem("tasks"));
 if (tasksLocalStorage !== null) {
   tasks = tasksLocalStorage;
   taskList.innerHTML = "";
-  for (const task of tasks) {
-    renderTasks(task);
-  }
+  renderTasks(tasks);
+
 } else {
   fetch(SERVER_URL)
     .then((response) => response.json())
