@@ -21,6 +21,7 @@ const handleClick = (event) => {
     chosenTask.completed = true;
   }
   taskList.innerHTML = "";
+  localStorage.setItem("tasks", JSON.stringify(tasks));
   renderTasks(tasks);
 };
 
